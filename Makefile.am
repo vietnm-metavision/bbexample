@@ -3,10 +3,10 @@ AUTOMAKE_OPTIONS = foreign
 CFLAGS = -Wall -pedantic -O2
 include_HEADERS = bbexample.h
 
-lib_LTLIBRARIES = libbbexample.la
-libbbexample_la_SOURCES  = bbexamplelib.c
-libbbexample_la_LDFLAGS= -version-info 1:0:0
+lib_LTLIBRARIES = libCPP.la 
+libCPP_la_SOURCES  = CPP.cpp C_call_CPP.c
+libCPP_la_LDFLAGS= -version-info 1:0:0
 
 bin_PROGRAMS = bbexample
-bbexample_SOURCES = bbexample.c
-bbexample_LDADD = libbbexample.la
+bbexample_SOURCES = main.c
+bbexample_LDADD = libCPP.la
