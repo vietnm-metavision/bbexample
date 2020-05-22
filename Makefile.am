@@ -4,7 +4,7 @@ CFLAGS = -Wall -pedantic -O2
 include_HEADERS = bbexample.h
 
 lib_LTLIBRARIES = libCPP.la 
-libCPP_la_SOURCES  = CPP.cpp C_call_CPP.c
+libCPP_la_SOURCES  = CPP.cpp C_call_CPP.cpp
 libCPP_la_LDFLAGS= -version-info 1:0:0
 
 bin_PROGRAMS = bbexample
