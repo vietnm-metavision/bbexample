@@ -3,7 +3,7 @@
 
 #AC_PREREQ(2.60)
 AC_INIT(bbexample, 0.1, ajlennon@dynamicdevices.co.uk)
-AC_CONFIG_SRCDIR([main.c])
+AC_CONFIG_SRCDIR([main.cpp])
 AC_CONFIG_HEADER([config.h])
 AM_INIT_AUTOMAKE(bbexample, main)
 
