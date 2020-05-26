@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
     //write text on the matrix:
     putText(output,
             "Hello World :)",
-            cvPoint(15,70),
+            cv::Point(15,70),
             FONT_HERSHEY_PLAIN,
             3,
             cvScalar(0,255,0),
