@@ -2,7 +2,7 @@ AUTOMAKE_OPTIONS = foreign
 
 CFLAGS = -Wall -pedantic -O2
 
-AM_LDFLAGS = `pkg_config --libs opencv4`
+AM_LDFLAGS = `pkg-config --libs opencv4`
 
 include_HEADERS =  C_call_CPP.h 
 
