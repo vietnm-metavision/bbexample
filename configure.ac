@@ -9,8 +9,7 @@ AM_INIT_AUTOMAKE(bbexample, main)
 
 PKG_CHECK_MODULES(
 	[OPENCV],
-	[opencv4 >= 4.0]
-)
+	[opencv4 >= 4.0])
 
 # Checks for programs.
 AC_PROG_CC
