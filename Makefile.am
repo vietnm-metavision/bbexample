@@ -1,6 +1,6 @@
 AUTOMAKE_OPTIONS = foreign
 
-CFLAGS = -Wall -pedantic -O2
+CFLAGS = -Wall -pedantic -O2 $(OPENCV_CFLAGS)
 
 AM_LDFLAGS = `pkg-config --libs opencv4`
 

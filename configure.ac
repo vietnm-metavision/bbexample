@@ -7,7 +7,11 @@ AC_CONFIG_SRCDIR([main.cpp])
 AC_CONFIG_HEADER([config.h])
 AM_INIT_AUTOMAKE(bbexample, main)
 
-PKG_CHECK_MODULES([OPENCV] [opencv])
+PKG_CHECK_MODULES(
+	[OPENCV],
+	[opencv4 >= 4.0],
+	[AC_DEFINE([HAVE_OPENCV_4], [1], [Using opencv4 package])]
+)
 
 # Checks for programs.
 AC_PROG_CC
