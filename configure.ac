@@ -9,8 +9,7 @@ AM_INIT_AUTOMAKE(bbexample, main)
 
 PKG_CHECK_MODULES(
 	[OPENCV],
-	[opencv4 >= 4.0],
-	[AC_DEFINE([HAVE_OPENCV_4], [1], [Using opencv4 package])]
+	[opencv4 >= 4.0]
 )
 
 # Checks for programs.
