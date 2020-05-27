@@ -7,7 +7,7 @@ AC_CONFIG_SRCDIR([main.cpp])
 AC_CONFIG_HEADER([config.h])
 AM_INIT_AUTOMAKE(bbexample, main)
 
-PKG_CHECK_MODULES([opencv4])
+PKG_CHECK_MODULES([OPENCV])
 
 # Checks for programs.
 AC_PROG_CC
