@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
             cv::Point(15,70),
             FONT_HERSHEY_PLAIN,
             3,
-            cvScalar(0,255,0),
+            cv::Scalar(0,255,0),
             4);
     
     //display the image:
