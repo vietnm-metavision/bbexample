@@ -21,7 +21,8 @@ int main(int argc, char** argv) {
             4);
     
     //display the image:
-    imshow("Output", output);
+    //imshow("Output", output);
+    imwrite("test.png", output);
     
     //wait for the user to press any key:
     waitKey(0);
