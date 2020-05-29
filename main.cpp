@@ -6,7 +6,7 @@ using namespace cv;
 int main(int argc, char** argv) {
     
     //create a gui window:
-    //namedWindow("Output",1);
+    namedWindow("Output",1);
     
     //initialize a 120X350 matrix of black pixels:
     Mat output = Mat::zeros( 120, 350, CV_8UC3 );
@@ -21,8 +21,8 @@ int main(int argc, char** argv) {
             4);
     
     //display the image:
-    //imshow("Output", output);
-    imwrite("test.png", output);
+    imshow("Output", output);
+    //imwrite("test.png", output);
     
     //wait for the user to press any key:
     waitKey(0);
